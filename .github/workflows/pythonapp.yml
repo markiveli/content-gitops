@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "miveli" --password-stdin
-        docker image build -t miveli/gitops:hellov1.0 .
-        docker push miveli/gitops:hellov1.0
+        docker image build -t miveli/gitops:hellov1.2.2 .
+        docker push miveli/gitops:hellov1.2.2
